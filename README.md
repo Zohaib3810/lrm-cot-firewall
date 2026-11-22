@@ -58,6 +58,15 @@ Evaluated on a single **NVIDIA Tesla T4 (16 GB VRAM)** using [PyTorch](https://p
 - **Live sample size:** Live testing covers $N=80$ prompts (40 benign, 40 adversarial), where each false block equals `2.50%`.
 
 ---
+## Quick Setup & Reproduction
+
+1. **Open the Notebook in Colab:** Open [FYP_initial.ipynb](https://github.com/Zohaib3810/lrm-cot-firewall/blob/main/FYP_initial.ipynb) in Google Colab and attach a GPU runtime (evaluated on an NVIDIA Tesla T4).
+2. **Mount Drive & Set Workspace Root:** Mount Google Drive and point `BASE_DIR` to `/content/drive/MyDrive/CoT_Firewall_Research` (which stores `data/raw`, `data/processed`, `data/vector_db`, `models`, `results`, and exported assets).
+3. **Run Cells in Order:** Execute the environment check, canonicalization and helper utilities, dataset/training/evaluation cells, and latency/metric exporters—avoiding unnecessary full re-training if pretrained checkpoints and result CSVs/JSONs are already saved in Drive.
+
+## Project & Citation
+
+This repository accompanies the Final Year Project and research manuscript (`conference_101719.tex`, maintained in Overleaf) on detecting and mitigating **Chain-of-Thought (CoT) Forgery** in Large Reasoning Models via a three-layer middleware firewall.
 
 ## Repository & Workspace Layout
 
